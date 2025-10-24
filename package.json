@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "cd apps/frontend && npm install && npm run build",
+    "build": "cd apps/frontend && npm install && next build",
     "dev": "turbo run dev",
-    "start": "cd apps/frontend && npm run start",
+    "start": "cd apps/frontend && next start -p $PORT",
     "lint": "turbo run lint",
     "clean": "turbo run clean",
     "db:generate": "turbo run db:generate",
