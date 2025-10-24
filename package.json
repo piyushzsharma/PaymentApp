@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "cd apps/frontend && npm install && next build",
+    "build": "mkdir -p apps/frontend/public && touch apps/frontend/public/.vercel-ready && cd apps/frontend && npm install && next build",
     "dev": "turbo run dev",
     "start": "cd apps/frontend && next start -p $PORT",
     "lint": "turbo run lint",

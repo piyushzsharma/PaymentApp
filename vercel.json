@@ -5,7 +5,8 @@
       "src": "apps/frontend/package.json",
       "use": "@vercel/next",
       "config": {
-        "outputDirectory": "apps/frontend/.next"
+        "outputDirectory": "apps/frontend/.next",
+        "includeFiles": ["apps/frontend/.next/**"]
       }
     }
   ],
